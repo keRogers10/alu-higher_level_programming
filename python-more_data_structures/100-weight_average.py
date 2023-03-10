@@ -9,4 +9,4 @@ def weight_average(my_list=[]):
             for o in i:
                 aadi += o
                 count += 1
-        return aadi
+        return aadi/count
