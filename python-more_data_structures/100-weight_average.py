@@ -3,4 +3,10 @@ def weight_average(my_list=[]):
     if len_my_list = 0:
         return 0
     else:
-        return sum(my_list) / len(my_list)
+        aadi = 0
+        count = 0
+        for i in my_list:
+            for o in i:
+                aadi += o
+                count += 1
+        return aadi
