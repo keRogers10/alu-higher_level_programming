@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" Write a new empty class Square that defines a square
-"""
+"""Write a class Square that defines a square by"""
 
 
 class Square:
-    """ An empty class that defines a square"""
-    def __init__(self,size=None):
+    """Private instance attribute: size
+    Instantiation with size (no type/value verification)
+    no imporation of modules"""
+    def __init__(self, size):
         self.__size = size
