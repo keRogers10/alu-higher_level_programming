@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 a class that will inherit characters from base geometry
+again we will assign to instances of
+height and width
 """
 
 
