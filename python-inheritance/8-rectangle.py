@@ -1,24 +1,16 @@
 #!/usr/bin/python3
-""" a class that will inherit characters from base geometry"""
+""" Class that defines a rectangle from BaseGeometry Class """
+
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """
-    we have to define some of properties
-    of rectangle based on base geometry
-
-    args:
-    width 
-    height
-    """
+    """ Class that defines a rectangle from BaseGeometry Class """
 
     def __init__(self, width, height):
-        if type(width) != int or type(height) != int:
-            raise TypeError("Wrong type")
-        if width < 0 or height < 0:
-            raise ValueError("both width and height must be positive integers)
-        else:
+        """ Initializes instance """
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
         self.__width = width
         self.__height = height
