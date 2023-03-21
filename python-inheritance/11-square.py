@@ -19,4 +19,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """ Methode that printclass info"""
-        print("[Square] {:d}/{:d}".format(self.__size, self.__size))
+        print("[Square] {}/{}".format(self.__size, self.__size))
