@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class to json in addition to classes"""
+"""class to json."""
 
 
 class Student:
@@ -13,4 +13,4 @@ class Student:
     def to_json(self):
         """class to json."""
 
-        return self.
+        return self.__dict__
