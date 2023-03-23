@@ -3,6 +3,6 @@
 
 def read_file(filename=''):
     """new func to define our functionality"""
-    f = open("filename", "r", encoding="utf-8")
-    print(f.read())
-    f.close()
+    with open("filename", "r", encoding="utf-8") as f:
+        new = f.read()
+        print(new)
