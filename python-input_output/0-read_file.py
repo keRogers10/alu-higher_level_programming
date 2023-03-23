@@ -4,6 +4,6 @@
 
 def read_file(filename=''):
     """new func to define our functionality"""
-    with open("filename", "r", encoding="utf-8") as f:
+    with open(filename) as f:
         new = f.read()
         print(new, end="")
