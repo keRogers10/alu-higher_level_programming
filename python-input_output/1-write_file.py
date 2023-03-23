@@ -7,7 +7,7 @@ def write_file(filename="", text=""):
     and it will write text to file
     """
 
-    with open(filename) as f:
+    with open(filename, 'w+') as f:
         f.write(text)
 
     return len(text)
