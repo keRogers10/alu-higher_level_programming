@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class to json."""
+"""class to json in addition to classes"""
 
 
 class Student:
