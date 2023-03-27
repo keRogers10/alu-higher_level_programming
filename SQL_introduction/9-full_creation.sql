@@ -1,6 +1,6 @@
 -- creating table and inserting some ata the same time
 CREATE TABLE IF NOT EXISTS second_table (
-	is INT,
+	id INT,
 	name VARCHAR(256),
 	score INT);
 
