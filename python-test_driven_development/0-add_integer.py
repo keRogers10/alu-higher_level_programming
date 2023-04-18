@@ -6,7 +6,7 @@ testing add_integer to check if it passes all the tests
 
 def add_integer(a, b=98):
     """
-    the func to addd two int and check whether they 
+    the func to addd two int and check whether they
     are int or float
     """
     if type(a) != int or type(a) != float:
