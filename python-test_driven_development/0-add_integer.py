@@ -9,18 +9,12 @@ def add_integer(a, b=98):
     the func to addd two int and check whether they
     are int or float
     """
-    if type(a) != int or type(a) != float:
-        raise TypeError('a must be an integer')
-    else:
-        if type(a) == int:
-            a = a
-        elif type(a) == float:
-            a = int(a)
-    if type(b) != int or type(b) != float:
-        raise TypeError('b must be an integer')
-    else:
-        if type(b) == int:
-            b = b
-        elif type(b) == float:
-            a = int(b)
+    if type(a) is not int and type(a) is not float:
+        raise TypeError("a must be an integer")
+    if type(b) is not int and type(b) is not float:
+        raise TypeError("b must be an integer")
+    if type(a) is float:
+        a = int(a)
+    if type(b) is float:
+        b = int(b)
     return a + b
